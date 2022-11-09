@@ -2,9 +2,9 @@ import React from 'react'
 
 function Projects({iframesrc, toolsUsed, projectTitle, about, image}) {
   return (
-    <div className='border border-secondary text-secondary overflow-hidden'>
+    <div className='border border-secondary text-secondary overflow-hidden w-full md:w-1/3'>
         <div>
-            <img src={image} className="w-full h-[203px]" />
+            <img src={image} className="w-full" />
         </div>
         <p className='border-y border-y-secondary p-2'>{toolsUsed}</p>
         <article className='p-4'>
