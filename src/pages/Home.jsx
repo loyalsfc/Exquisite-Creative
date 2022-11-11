@@ -2,9 +2,9 @@ import React from 'react'
 import Header from '../components/Header'
 import exquisite from '../assets/exquisite.png'
 import Projects from './Projects'
-import Zomb from '../assets/zomb.PNG'
-import proof from "../assets/proof.PNG"
-import rate from "../assets/rate.PNG"
+import Zomb from '../assets/zomb.jpg'
+import proof from "../assets/proof.jpg"
+import rate from "../assets/rate.jpg"
 import Divider from './Divider'
 import Frame from '../components/Frame'
 import logo from "../assets/logo.png"
