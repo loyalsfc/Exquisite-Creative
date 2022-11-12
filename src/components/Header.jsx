@@ -16,7 +16,7 @@ function Header() {
                     <Link to="/"><li className='my-8  hover:text-gold hover:underline cursor-pointer text-white'><span className='text-gold'>#</span>home</li></Link>
                     <Link to="/project"><li className='my-8  hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>works</li></Link>
                     <Link to="/about"><li className='my-8  hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>about-us</li></Link>
-                    <li className='my-8  hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>contacts</li>
+                    <Link to="/contact"><li className='my-8  hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>contacts</li></Link>
                 </ul>
             </div>
             <Link to="/">
@@ -30,7 +30,7 @@ function Header() {
                     <Link to="/"><li className='mr-4 inline-block hover:text-gold hover:underline cursor-pointer text-white'><span className='text-gold'>#</span>home</li></Link>
                     <Link to="/project"><li className='mx-4 inline-block hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>works</li></Link>
                     <Link to="/about"><li className='mx-4 inline-block hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>about-us</li></Link>
-                    <li className='ml-4 inline-block hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>contacts</li>
+                    <Link to="/contact"><li className='ml-4 inline-block hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>contacts</li></Link>
                 </ul>
             </nav>
             <i className="fa-solid fa-bars text-xl md:hidden" onClick={hideMobileMenu}></i>    
