@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 function Header() {
@@ -11,8 +12,8 @@ function Header() {
             <div className='mobile-menu fixed bg-bg-primary h-screen w-4/5 border-r z-20 top-0 -left-full text-xl p-6 transition-all md:hidden'>
                 <i className="fa-solid fa-xmark absolute right-6 top-8" onClick={hideMobileMenu}></i>
                 <ul className='text-secondary mt-20'>
-                    <li className='my-8  hover:text-gold hover:underline cursor-pointer text-white'><span className='text-gold'>#</span>home</li>
-                    <li className='my-8  hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>works</li>
+                    <Link to="/"><li className='my-8  hover:text-gold hover:underline cursor-pointer text-white'><span className='text-gold'>#</span>home</li></Link>
+                    <Link to="/project"><li className='my-8  hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>works</li></Link>
                     <li className='my-8  hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>about-us</li>
                     <li className='my-8  hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>contacts</li>
                 </ul>
@@ -23,8 +24,8 @@ function Header() {
             </div>
             <nav className='hidden md:block'>
                 <ul className='text-secondary'>
-                    <li className='mr-4 inline-block hover:text-gold hover:underline cursor-pointer text-white'><span className='text-gold'>#</span>home</li>
-                    <li className='mx-4 inline-block hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>works</li>
+                    <Link to="/"><li className='mr-4 inline-block hover:text-gold hover:underline cursor-pointer text-white'><span className='text-gold'>#</span>home</li></Link>
+                    <Link to="/project"><li className='mx-4 inline-block hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>works</li></Link>
                     <li className='mx-4 inline-block hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>about-us</li>
                     <li className='ml-4 inline-block hover:text-gold hover:underline cursor-pointer'><span className='text-gold'>#</span>contacts</li>
                 </ul>

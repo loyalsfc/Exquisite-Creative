@@ -1,5 +1,4 @@
 import Transitions from '../components/transition/Transition'
-
 import React from 'react'
 import Header from '../components/Header'
 import exquisite from '../assets/exquisite.png'
@@ -12,6 +11,7 @@ import Frame from '../components/Frame'
 import logo from "../assets/logo.png"
 import Tools from './Tools'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -33,7 +33,7 @@ function Home() {
                     <Divider 
                         name="projects"
                     />
-                    <span className='ml-auto'> view all <i className="fa-solid fa-arrow-right"></i></span>
+                    <Link to="/project" className='ml-auto'><span> view all <i className="fa-solid fa-arrow-right"></i></span></Link>
                 </div>
 
                 <div className='flex items-start justify-between flex-wrap md:flex-nowrap gap-8'>
