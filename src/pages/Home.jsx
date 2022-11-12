@@ -108,7 +108,7 @@ function Home() {
 
                         <p>Transforming creativity and knowledge into a graphics design, websites etc are what we have been doingover a year. We have been helping various clients to establish their presence online.</p>
 
-                        <button className='px-4 py-2 border mt-6 border-gold text-white hover:bg-gold'>Read more <i className="fa-solid fa-arrow-right"></i></button>
+                        <Link to="/about"><button className='px-4 py-2 border mt-6 border-gold text-white hover:bg-gold'>Read more <i className="fa-solid fa-arrow-right"></i></button></Link>
                     </article>
                     <div className='w-1/2 hidden md:block shrink-0 relative'>
                         <div className='absolute top-1/4 left-24 z-10'><Frame /></div>

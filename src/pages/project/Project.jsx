@@ -18,7 +18,7 @@ function Project() {
     <Transitions>
         <div className='container mx-auto'>
             <Header />
-            <main>
+            <main className='mb-[68px]'>
                 <PageTitle title="project" subTitle="List of our projects" />
             </main>
             <section>
