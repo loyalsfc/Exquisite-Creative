@@ -16,25 +16,19 @@ import Contact from './pages/contact/Contact';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <Home />
-      },
-      {
-        path: '/project',
-        element: <Project />
-      },
-      {
-        path: '/about',
-        element: <About/>
-      },
-      {
-        path: '/contact',
-        element: <Contact />
-      }
-    ]
+    element: <Home />,
+  },
+  {
+    path: '/project',
+    element: <Project />
+  },
+  {
+    path: '/about',
+    element: <About/>
+  },
+  {
+    path: '/contact',
+    element: <Contact />
   }
 ])
 
