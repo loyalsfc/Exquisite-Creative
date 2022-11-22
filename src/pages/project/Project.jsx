@@ -9,6 +9,7 @@ import Crappo from "../../assets/crappo.jpg"
 import rate from "../../assets/rate.jpg"
 import dev from "../../assets/dev.jpg"
 import rekt from "../../assets/rekt.jpg"
+import proof from "../../assets/proof.jpg"
 import exquiste from "../../assets/exquisite.jpg"
 import Footer from '../../components/Footer'
 
@@ -65,6 +66,13 @@ function Project() {
                         projectTitle = "Exquisite Creative"
                         about = "This site you are viewing"
                         image={exquiste}
+                    />
+                    <Projects 
+                        iframesrc = "https://proofofinu.com/"
+                        toolsUsed = "Wordpress, Elementor"
+                        projectTitle = "Proof of Inu"
+                        about = "A landing of page for a Meme Coin"
+                        image={proof}
                     />
                 </div>
             </section>

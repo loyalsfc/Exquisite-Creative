@@ -2,26 +2,16 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 function Header() {
-    const path = location.pathname.replace('/', '')
     const hideMobileMenu = () => {
         document.querySelector('.mobile-menu').classList.toggle('-left-full')
     }
 
     const activeHeader = (e) => {
-        
         document.querySelectorAll('ul li').forEach(item=>{
+            // console.log(item)
             item.classList.remove('text-white');
         })
-        console.log(path)
-        if(path != ''){
-            document.querySelectorAll('.'+path).forEach(item=>{
-                item.classList.add('text-white')
-            })
-        } else {
-            document.querySelectorAll('.home').forEach(item=>{
-                item.classList.add('text-white')
-            })
-        }
+        e.target.classList.add('text-white')
     }   
 
   return (
